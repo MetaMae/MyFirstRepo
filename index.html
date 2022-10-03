@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full-Time Travel</title>
+    <style>
+      a {
+        color: black;
+      }
+      a:hover {
+        cursor: pointer;
+        color: #ffffff;
+        text-decoration: none;
+      }
+      button {
+        background-color: #adddd0;
+        color: darkgreen;
+        font-size: 20px;
+        padding: 15px 18px;
+        border: 2px solid green;
+        border-radius: 20px;
+        box-shadow: 3px 6px 4px #ccc;
+        transition: all 150ms ease-in-out;
+        margin: 40px 0 0 0;
+      }
+
+      button:hover {
+        color: #ffffff;
+        cursor: pointer;
+        background-color: darkgreen;
+      }
+      h1 {
+        font-size: 45px;
+        font-weight:bolder;
+        margin-bottom: 0px;
+      }
+      h2 {
+        font-size: 35px;
+        margin-bottom: 50px;
+      }
+
+      hr {
+        width: 50px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 23px;
+      }
+
+
+      .colorfulStreet {
+        width: 50%;
+      }
+
+      .fullPage {
+        background-image: linear-gradient(to bottom, #97ccbe 10%, #b2d6cd 40%, #d4f1e9 50%);
+        width: 50%;
+        padding: 20px 30px;
+        margin: -10px auto;
+        text-align: center;
+      }
+
+      .footer {
+        margin: 50px 0;
+      }
+
+      .image {
+        margin: 50px 0 5px 0;
+      }
+
+      .image1 {
+        box-shadow: 5px 8px 7px #ccc;
+        width: 70%;
+      }
+      .image2 {
+        background-color: #ffffff;
+        border: 6px solid #8ebfb2;
+        display: inline-block;
+        padding: 10px 0 60px 0;
+        margin-top: 40px;
+      }
+
+      .image2Paragraph {
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 0;
+        width: 300px;
+      }
+
+      .pOne {
+        margin: 20px 125px;
+      }
+
+      .title {
+        margin-bottom: 40px;
+      }
+
+      .subtitle {
+        font-size: 20px;
+        margin: 5px 0 20px 0;
+      }
+
+      .workers {
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fullPage">
+      <div class="title">
+        <h1>Full-Time Travel ✈️</h1>
+        <p class="subtitle">discover the <em>beauty</em> of <strong>working remote</strong></p>
+        <hr />
+      </div>
+      <div class="image">
+        <img
+          class="image1"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/348/original/7-Insights-into-the-Future-of-Remote-Work.jpeg?1663375661"
+        />
+
+        <p class="pOne">
+          In light of the pandemic, most people were introduced to working from
+          home. No commute time, full comfort, and zero co-workers or bosses to
+          deal with. The WFH life took the world by storm and most don't want to
+          leave this new norm. With the world settling down, companies are
+          urging people to return to the office, which has been sparking quite a
+          negative reaction. <span class=workers>Workers are now fighting for their right to work
+          remotely</span>, some have already relocated to a different country.
+        </p>
+        <br />
+        <a href="https://www.remotehub.com/">Click here for remote job openings</a>
+      </div>
+
+      <div class="image2">
+        <h2>So, Why Is Remote Work So Important?</h2>
+        <img
+          class="colorfulStreet"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/349/original/pexels-tommy-milanese-7891883.jpg?1663376539"
+          alt="Travelling woman sitting infront of a street of bright and colorful homes."
+        />
+        <p class="image2Paragraph">
+          I myself have been working remote for approximately 5 yrs now and the
+          list of positive effects are endless! I originally come from the most
+          expensive Canadian city to live in - Toronto. I was working tirelessly
+          just to pay for my basic needs. After years of struggling even when I
+          was making an impressive income, I knew there had to be another way. I
+          moved back in with family and began to use my income to travel and
+          enjoy life while I'm still young. Once I took my first long-term trip,
+          there was no going back. I was hooked.
+
+          <br />
+          <br />
+
+          Remote work gives you an opportunity to explore new cultures and
+          expand your mind. It allows for more fun and freedom without a dreaded
+          morning commute or crazy bills. I will never go back to the old way of
+          doing things after experiencing the beauty of what the world has to
+          offer and what I believe, is the way we were meant to live. I have
+          loved watching more and more companies embrace the remote lifestyle
+          and hope that the working world continues to grow this way.
+
+          <br />
+          <br />
+
+          <span class=workers>Everyone deserves a chance to live in a way that makes then feel
+          fulfilled without restriction.</span>
+        </p>
+        <p>
+          <button>Discover working remote</button>
+        </p>
+      </div>
+
+      <p class="footer">Created by Taylor S</p>
+
+
+    <script>
+
+      let popUp = () => {
+        let firstName = prompt("What is your first name?");
+        let age = prompt("How old are you?");
+        ageVerify(age);
+        
+      }
+      
+
+      let ageVerify = (age) => {
+        if (age >= 18) {
+          let email = prompt("What is your email?");
+          let emailList = alert("Congratulations! You've just subscribed to our weekly newsletter on Remote Work. Check your inbox now for your confirmation.");
+        }
+        else {
+          alert("Sorry, come back when you're 18!")
+        }
+      }
+      let buttonSearch = document.querySelector("button");
+      let buttonClick = document.addEventListener("click", popUp);
+    </script>
+  </body>
+</html>
